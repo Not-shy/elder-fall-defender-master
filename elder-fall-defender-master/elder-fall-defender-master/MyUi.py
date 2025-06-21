@@ -11,7 +11,6 @@ from PyQt5.QtWidgets import QMainWindow, QApplication, QFileDialog, QMessageBox
 from PyQt5.QtGui import QPixmap, QImage, qRed, qGreen, qBlue
 from PyQt5.QtCore import Qt
 # 自定义模块
-# result = predict(img)
 from ultralytics import YOLO
 
 
@@ -115,7 +114,6 @@ class MyWindow(QMainWindow):
         self.ui.Canny.clicked.connect(lambda: self.Canny())
         self.ui.Save.clicked.connect(lambda: self.Save())
         self.ui.pushButton_4.clicked.connect(self.DeepLearningProcess)
-        # self.ui.feiyan.clicked.connect(lambda:self.Feiyan())
 
         MainWindow.show()
         sys.exit(app.exec_())
